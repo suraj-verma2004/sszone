@@ -1,0 +1,341 @@
+body {
+    width: 100vw;
+    background: linear-gradient(93deg, #fff9e3, #ffe6b4, rgb(241, 175, 52));
+    margin: 0;
+    overflow-x: hidden;
+  
+
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+    height: 10vh;
+    width: 100%;
+    background-color:pink;
+    display: flex;
+
+}
+
+/* SHABHU SZONE LOOKS */
+
+.logo {
+
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+  /* MENUBAR */
+#menubar {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0.9);
+    left: -300px;
+    padding-top: 160px;
+    transition: .5s;
+
+}
+
+#menubar ul li {
+    margin: 10px 10px 30px 0px;
+
+    list-style: none;
+}
+
+#menubar ul li:hover {
+    background-color: grey;
+}
+
+#menubar ul li a {
+    color: white;
+
+    text-decoration: none;
+}   
+/* MENUBAR BUTTON  */
+
+#menubar .toggle-btn {
+    position: absolute;
+    left: 120%;
+    top: 30px;
+}
+
+.toggle-btn span {
+    width: 2vw;
+    height: .5vh;
+    background: white;
+    display: block;
+    margin-top: 2px;
+}
+
+#menubar.active {
+    left: 0px;
+}
+
+/* DETAILIN OF INSTITUTE */
+.logo img {
+    height: 25vh;
+    width: auto;
+    border-radius: 50%;
+}
+
+.logo p {
+    /* position: relative; */
+    font-size: 500%;
+    font-weight: bold;
+    color: orangered;
+    text-align: center;
+
+}
+
+/* QUOTE */
+.quote {
+    width: 100vw;
+    display: flex;
+ justify-content:flex-end;
+    overflow: hidden;
+    padding: 30px;
+    margin-left: 70px;
+
+}
+
+#quote {
+    font-size: 500%;
+    animation: quote 2s 1 .4s;
+    width:40vw;
+    z-index: 0;
+    /* background: url(img/SSlogo.png);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    color: transparent; */
+}
+
+@keyframes quote {
+    0% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(-24px);
+
+    }
+}
+/* ANIMATED STUDENT IMAGE */
+
+.student {
+    height: 80vh;
+    width: 60vw;
+    /* filter: drop-shadow(2px 4px rgb(240, 240, 66)); */
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .btn {
+    display: flex;
+    background: orange;
+    height: 10vh;
+    width: 20vw;
+    margin: 50px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    padding: 20px;
+    font-weight: bolder;
+}
+.buttons .btn a{
+    text-decoration: none;
+    color:azure;
+}
+
+.abtsszone,
+.abtvajra {
+    padding: 50px;
+    display:flex;
+}
+
+#title {
+    font-size: 500%;
+    display: flex;
+    justify-content: center;
+    color:rgb(149, 19, 220);
+
+}
+
+.shambhuinf,
+.vajrafield {
+    width: 400px;
+    line-height: 40px;
+    font-size: 250%;
+    /* padding: 20px; */
+    margin-left: 30px;
+    margin-right: 100px;
+
+}
+
+.llogo,
+.prizes {
+    height: 60vh;
+    width: 40vw;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+   /* Benefit VAJRA cards */
+.vajracards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards {
+    padding: 3%;
+    height: fit-content;
+    width: 20vw;
+    background: linear-gradient(90deg, orange, magenta);
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    
+}
+.cards img {
+    height: 50%;
+    width: 50%;
+}
+
+/* BENEFITS OF VAJRA EXPLANATION */
+
+.benefit {
+    padding-left: 5vw;
+}
+
+.benefit ul li {
+    line-height: 60px;
+    font-size: 180%;
+}
+
+/* FOOTER & CONTACT */
+
+
+.foot {
+    height: fit-content;
+    width: 99vw;
+    /* padding: 20px; */
+    color: rgb(149, 149, 241);
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    animation: footer 2s 1 .4s;
+ 
+
+}
+
+.fa-solid {
+    color: red;
+}
+
+.foot a {
+    justify-content: center;
+ color: black;
+    text-decoration: none;
+}
+
+#whatsapp {
+    color: mediumseagreen;
+    font-size: 100%;
+}
+
+#instagram {
+    color: magenta;
+}
+
+#youtube {
+    color: red
+}
+.icon {
+    margin: 30px;
+    text-decoration: none;
+}
+@keyframes footer {
+    0% {
+        transform: translateX(-1000px);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .logo p{
+        font-size: 300%;
+    }
+    .logo img {
+        height: 20vh;
+    }
+    #quote{
+        font-size: 300%;
+    }
+    .student{
+        height:40vh;
+    }
+    .buttons .btn{
+        font-size: 100%;
+        width:fit-content;
+        height: fit-content;
+        padding:20px;
+        margin:10px;
+    }
+    #menubar{
+        font-size: 150%;
+        z-index: 1;
+    }
+    .abtsszone,
+.abtvajra {display:block;
+    padding: 30px;
+    align-items: center;}
+    #title {
+        font-size: 240%;
+        display: flex;
+        color: blue;
+        justify-content: center;
+    
+    }
+    .llogo,
+.prizes {height: 50vh;
+    width: 50vw;
+    position: relative;
+    left:100px;
+    
+}
+.shambhuinf,.vajrafield{
+    font-size: 150%;
+}
+.vajracards {display: block;
+}
+.cards{
+    width:50vw;
+    height: fit-content;
+    padding: 30px;
+    margin-top:50px;
+    margin-left: 100px;
+}
+.cards h1{
+    font-size: 180%;
+    color: #fff9e3;
+}
+.cards p{
+    font-size: 100%;
+    color:aqua;
+   
+}
+.benefit{
+    font-size: 80%;
+    line-height: 30px;
+    padding: 2px;
+}
+.foot{
+    font-size: 100%;
+    width:96vw;
+ }}
